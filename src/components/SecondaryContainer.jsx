@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 const SecondaryContainer = () => {
   const movies = useSelector((store) => store.movies);
+  const ShowGemini = useSelector((store) => store.gemini.showGemini);
   return (
     <div className="text-white absolute bg-black -mt-80 md:-mt-0">
       <div className="-mt-32 relative z-10">
@@ -34,9 +35,11 @@ const SecondaryContainer = () => {
           movies={movies.comedyMovies}
         />
       </div>
-      <div className="mt-6">
-        <Footer />
-      </div>
+      {!ShowGemini ? (
+        <div className="mt-6 flex items-end">
+          <Footer />
+        </div>
+      ) : null}
     </div>
   );
 };

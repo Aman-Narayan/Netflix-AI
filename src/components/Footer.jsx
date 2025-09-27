@@ -3,15 +3,16 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
-  FaFacebookF,
-  FaTwitter,
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-6 mt-5 border-t-2 border-white z-30 w-full">
+    <footer
+      id="footer"
+      className="bg-gray-900 text-gray-300 py-10 px-6 border-t-2 border-white z-30 w-full"
+    >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* Left Section */}
         <div className="space-y-5">

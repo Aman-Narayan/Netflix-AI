@@ -8,7 +8,7 @@ const VideoBackground = ({ trailerId }) => {
   return (
     <div className="relative md:top-0 md:left-0 w-screen h-screen overflow-hidden z-[-10]">
       <iframe
-        className="size-min absolute top-1/4 md:top-1/2 lg:top-1/2 lg:left-1/2 md:left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[2.5] lg:scale-150"
+        className="absolute top-1/4 left-1/2 md:top-1/2 md:left-1/2 lg:top-1/2 lg:left-1/2 w-full h-full -translate-x-1/2 -translate-y-1/2 scale-[2.5] lg:scale-150"
         src={embedUrl}
         title="YouTube video player"
         frameBorder="0"

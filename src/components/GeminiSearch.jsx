@@ -8,7 +8,7 @@ const GeminiSearch = () => {
 
   return (
     <div className="">
-      <div className="absolute w-screen -z-10">
+      <div className="fixed w-screen -z-10 ">
         <img
           src="/SearchLogo.png"
           alt="BackgroundImage"
@@ -20,7 +20,15 @@ const GeminiSearch = () => {
       <GeminiSearchBar setMovies={setMovies} />
       {/* pass data down */}
       <GeminiMovieSuggetion movies={movies} />
-      <Footer />
+      {movies.length == 0 ? (
+        <div className="mt-64">
+          <Footer />
+        </div>
+      ) : (
+        <div className="mt-0">
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };
